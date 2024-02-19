@@ -18,11 +18,21 @@
     color: #E5E7EB;
 }
 
+
+.sign-up-subtext {
+    color: #E5E7EB;
+    font-size: 15px;
+}
+.sign-up-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
 .footer {
     color: #E5E7EB;
 }
 
-button, .sign-up {
+button, .sign-up-container {
     background-color: #3882F6;
     color: white;
 }
@@ -36,7 +46,11 @@ button, .sign-up {
     color: #1F2937;
     font-size: 36px;
     font-style: italic;
+    font-weight: lighter;
 }
+
+
+
 /* Colors End */
 
 
@@ -62,6 +76,7 @@ body {
 
 .header-logo {
     font-size: 24px;
+    font-weight: 800;
     /* margin-right: auto; */
     margin-left: 12px;
 }
@@ -160,10 +175,11 @@ a {
 }
 
 .quote-container {
-    width: 600px;
+    max-width: 600px;
     margin: 40px;
     display: flex;
     flex-direction: column;
+    flex-shrink: 1;
 }
 .quote-author {
     align-self: flex-end;
@@ -173,11 +189,33 @@ a {
 
 /* Sign Up Start */
 .sign-up-button {
-    border-color: white;
+    border: 2px solid white;
     width: 100px;
     height: 25px;
     cursor: pointer;
 }
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.sign-up-container {
+    width: 900px;
+    height: 100px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.sign-up-left {
+    width: 300px;
+}
+
 /* Sign Up End */
 
 
